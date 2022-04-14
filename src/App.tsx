@@ -6,6 +6,7 @@ export default function App() {
 
   return (
     <div className="App">
+      {/* Create a button counter that increases by 1 */}
       <p>{counter}</p>
       <button
         onClick={() => {
@@ -13,6 +14,13 @@ export default function App() {
         }}
       >
         Increase Counter
+      </button>{" "}
+      <button
+        onClick={() => {
+          setCounter(counter - 1);
+        }}
+      >
+        Decrease Counter
       </button>
     </div>
   );
